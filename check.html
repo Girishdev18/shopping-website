@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+<body>
+    <!-- Address box-->
+    <div class="address-box">
+        
+    <div class="address-content">
+      <h2> Address Details</h2>
+      
+      <div class="address">
+      <form id="addressform" class="add-box">
+
+
+        <div class="form-row">
+        <label for="name">Full name :</label>
+
+        <div class="field">
+        <div class="input-box">
+        <input type="text" id="name" placeholder="Enter your full name" list="nameList">
+        <datalist id="nameList"></datalist>
+        <span class="status"></span>
+        </div>
+        <small class="error"></small>
+        </div>
+        </div>
+        
+
+        <div class="form-row">
+  <label for="name">Phone :</label>
+
+  <div class="field">
+    <div class="input-box">
+      <input type="number" id="phone" placeholder="Enter your phone number" list="phoneList">
+      <datalist id="phoneList"></datalist>
+
+      <span class="status"></span>
+    </div>
+    <small class="error"></small>
+  </div>
+</div>
+  
+
+        <div class="form-row">
+  <label for="name">Email :</label>
+
+  <div class="field">
+    <div class="input-box">
+      <input type="text" id="email" placeholder="Enter your email" list="emailList">
+      <datalist id="emailList"></datalist>
+      <span class="status"></span>
+    </div>
+    <small class="error"></small>
+  </div>
+</div>
+
+
+        <div class="form-row">
+  <label for="name">Address :</label>
+
+  <div class="field">
+    <div class="input-box">
+      <input type="text" id="Address" placeholder="Enter your address" list="addressList">
+      <datalist id="addressList"></datalist>
+      <span class="status"></span>
+    </div>
+    <small class="error"></small>
+  </div>
+</div>
+
+<div class="form-row">
+  <label for="name">Pincode :</label>
+
+  <div class="field">
+    <div class="input-box">
+      <input type="number" id="pincode" placeholder="Enter your pincode">
+      <span class="status"></span>
+    </div>
+    <small class="error"></small>
+  </div>
+</div>
+
+
+        <div class="form-row" style="margin-bottom: 2px;">
+  <label for="name">State :</label>
+
+  <div class="field">
+    <div class="input-box">
+      <input type="text" id="state" placeholder="Enter your state">
+      <span class="status"></span>
+    </div>
+    <small class="error"></small>
+  </div>    
+</div>
+
+
+        <div class="form-row">
+  <label for="name">Address type :</label>
+
+  <div class="field">
+    <div class="input-box">
+    <select class="select" id="addressType">
+        <option> Home </option>
+        <option> Office </option>
+        <option> Others </option>
+    </select>
+        <span class="status"></span>
+    </div>
+    <small class="error"></small>
+  </div>
+</div>
+        <p id="msg"></p>
+
+
+        <div class="buttons">
+         <button class="back" onclick="window.location.href='index.html'" > Back to shop </button>
+        <button class="okay" id="submit" type="submit"> Proceed to pay </button>
+        </div>
+
+      </form>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="check.js"></script>
+</body>
+</html>

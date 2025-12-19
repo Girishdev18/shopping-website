@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment section</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+
+<div class="payment-section">
+
+  <div class="payment">
+      <h2> Order Summary</h2>
+
+
+  <!-- Order Summary -->
+ <div class="order-box">
+
+    <p>Total items selected : <span id="items"></span></p>
+    <p style="margin-top: -5px;">Total amount: <strong>₹ <span id="amount"></span></strong></p>
+
+  </div>
+
+  <!-- Payment Methods -->
+
+      <h2 style="margin-top: 5px;">Select Payment Method</h2>
+
+  <div class="card">
+
+    <label class="pay-option" style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">
+      <input type="radio" name="payment"  value="card" style="margin-bottom: 10px; margin-left: 10px;">
+      💳 Credit / Debit Card
+    </label><br>
+
+    <label class="pay-option" style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">
+      <input type="radio" name="payment" value="upi" style="margin-bottom: 10px ; margin-left: 10px;" >
+      📱 UPI
+    </label><br>    
+
+    <label class="pay-option" style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">
+      <input type="radio" name="payment" value="cod" style="margin-bottom: 10px; margin-left: 10px">
+      🚚 Cash on Delivery
+    </label>
+
+   </div>
+
+  <!-- Card Details -->
+  <div class="card-hidden" id="cardBox">
+
+    <input type="text" placeholder="Card Number" >
+
+    <div class="row">
+      <input type="text" placeholder="MM/YY">
+      <input type="text" placeholder="CVV">
+    </div>
+
+  </div>
+
+  <!-- UPI -->
+  <div class="card-hidden" id="upiBox">
+
+    <input type="text" placeholder="Enter UPI ID">
+
+  </div>
+  
+  <p id="message"></p>
+
+  <div id="process" class="Processing">
+      <p class="text">Processing ... </p>
+      <span id="spin"></span>
+  </div>
+
+  <div id="successScreen" class="success-screen">
+  <div class="tick-container">
+    <svg class="tick" viewBox="0 0 52 52">
+      <circle class="tick-circle" cx="26" cy="26" r="25"/>
+      <path class="tick-check" d="M14 27 l7 7 l17 -17"/>
+    </svg>
+  </div>
+
+  
+<div id="successMsg" style="display:none; text-align:center; margin-top:30px;">
+  <h3 style="color:green;">Thank you, <span id="userName"></span>!</h3>
+  <p>Your order is confirmed 🎉</p>
+  </div>
+
+</div>
+    <div class="buttons" id="click">
+    <button class="back" onclick="window.location.href='check.html'"> Back to shop </button>
+    <button class="order" id="placeBtn"> Place order </button>
+    </div>
+
+</div>
+</div>
+<script src="payment.js" defer></script>
+</body>
+</html>

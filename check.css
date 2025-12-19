@@ -1,0 +1,208 @@
+ body{
+    background:linear-gradient( to right, rgb(32, 32, 33), rgb(101, 90, 101) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    padding:10px;
+    overflow: hidden;
+}
+.address-box{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: 480px;
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    margin-top:-25px;
+    padding:15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px black;
+    animation: 4s float ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.address-content{
+    background-color: rgb(252, 250, 250);
+    box-shadow: 0 2px 15px rgb(69, 66, 66);
+    border-radius: 10px;
+    margin-top: 5px;
+    height:600px;
+    margin-top: 15px;
+    margin-left: 16px;
+    width: 425px;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.address{
+    text-align: center;
+    margin-top: 14px;
+    margin-left: -10px;   
+}
+
+.form-row label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.form-row input{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width:260px;
+    height:22px;
+    padding: 9px;
+    margin-left: 5px;
+    border: none;
+    box-shadow: 0 1px 10px rgb(136, 120, 120);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#addresstype{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 9px;
+    border-radius: 7px;
+    box-shadow: 0 1px 10px rgb(136, 120, 120);
+    margin-left: 5px;
+    margin-bottom: 23px;
+}
+
+.payment{ 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 9px;
+    border-radius: 7px;
+    box-shadow: 0 1px 10px rgb(136, 120, 120);
+    margin-left: 5px;
+}
+
+.buttons{
+    margin-top: -7px;
+    display:flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.okay{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 15px;
+    color:white;    
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 10px rgb(86, 81, 81);
+    background:linear-gradient( to right, rgb(9, 225, 9), rgb(42, 108, 42));
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s ease;
+}
+
+.back{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 15px;
+    color:white;    
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 10px rgb(86, 81, 81);
+    background:linear-gradient( to right, rgb(160, 9, 225), rgb(112, 85, 130));
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s ease;
+}
+.okay:hover{
+    transform:scale(1.05);
+}
+
+.okay:active{
+    transform:scale(0.95);
+}
+
+.back:hover{
+    transform:scale(1.05);
+}
+
+.back:active{
+    transform:scale(0.95);
+}
+
+.status {
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.status.valid::after {
+    content: "✔";
+    color: #00c853;
+}
+
+.status.invalid::after {
+    content: "✖";
+    color: red;
+}
+
+.error{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -30px;
+    font-size: 15px;
+    color:red;
+    margin-left: -45px;
+}
+
+.input-box{
+     margin-left: 5px;
+     margin-top: -7px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+}
+
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.form-row{
+    display:flex;
+    margin-left: 37px;
+    margin-bottom: 8px;
+}
+
+.input-box .select{
+    border-radius: 7px; 
+    font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 0 1px 10px rgb(136, 120, 120);
+        border: none;
+        padding: 7px 9px;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+#msg{
+    color:green;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: -10px;
+}
+

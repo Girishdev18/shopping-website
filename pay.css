@@ -1,0 +1,264 @@
+body{
+    background:linear-gradient( to right, rgb(32, 32, 33), rgb(101, 90, 101) );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    padding:10px;
+    overflow: hidden;
+     }
+
+     .payment-section{
+         background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: 480px;
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    margin-top:30px;
+    padding:15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px black;
+    animation: float 4s ease-in-out infinite;
+     }
+
+     @keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform: translateY(-6px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+     .payment{
+        background-color: rgb(252, 250, 250);
+    box-shadow: 0 2px 15px rgb(69, 66, 66);
+    border-radius: 15px;
+    margin-top: 5px;
+    height:600px;
+    margin-top: 15px;
+    margin-left: 16px;
+    width: 425px;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+     }
+
+     h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+     }
+    
+     .order-box{
+        margin-top:-10px;
+     }
+    .order-box p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-left: 10px;
+     }
+
+     .back{
+    background:linear-gradient( to right, rgb(247, 112, 34), rgb(143, 81, 58));
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding:12px 15px;
+    border:none;
+    color:white;
+    box-shadow: 0 2px 10px rgb(53, 48, 48);
+    transition: 0.2s;
+     }
+    
+    .order{
+    background:linear-gradient( to right, rgb(15, 64, 241), rgb(89, 101, 230));
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding:12px 15px;
+    border:none;
+    color:white;
+    box-shadow: 0 2px 10px rgb(53, 48, 48);
+    transition: 0.2s;
+    }
+
+    .buttons{
+    margin-top: 540px;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 70px;   
+    gap:50px;
+    }
+
+   .back:hover{
+    transform:scale(1.05);
+   }
+
+   .back:active{
+     transform:scale(0.95);
+   }
+
+   .order:hover{
+    transform: scale(1.05);
+   }
+
+   .order:active{
+    transform:scale(0.95);
+   }
+
+.card h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.card-hidden input{
+    border-radius: 8px;
+    box-shadow: 0 1px 10px rgb(46, 43, 43);
+    border: none;
+    padding:7px 7px;
+    height:20px;
+    width:260px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.processing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.text{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:green; 
+    margin-left: 150px;   
+}
+
+#spin {
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  border: 3px solid #ccc;
+  border-top: 3px solid #36ec16;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* SUCCESS SCREEN */
+.payment.success {
+  background: #2ecc71;
+  color: white;
+  transition: background 0.5s ease;
+  height:600px;
+}
+
+.payment.success-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tick animation */
+.tick {
+  width: 100px;
+  height: 100px;
+}
+
+.tick-circle {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  animation: drawCircle 0.6s forwards;
+}
+
+.tick-check {
+  fill: none;
+  stroke: white;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: drawCheck 0.4s 0.6s forwards;
+}
+
+@keyframes drawCircle {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes drawCheck {
+  to { stroke-dashoffset: 0; }
+}
+
+.thanks{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+.textorder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.success-btn {
+  display: none;
+  margin-top: 25px;
+  padding: 12px 26px;
+  background: #fff;
+  color: #2ecc71;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s fadedown ease-in;
+}
+
+@keyframes fadedown{
+    0%{
+        transform:translateY(0px);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(325px);
+        opacity: 1;
+    }
+}
